@@ -67,8 +67,10 @@
               textAlign: "center",
               textBaseline: "top",
             }),
+
           })
         );
+        
       }
 
       /*
@@ -102,6 +104,18 @@
           zoom: 1,
         }),
       });
+        map.on('click', function (evt) {
+            var feature = map.forEachFeatureAtPixel(evt.pixel,
+              function (feature) {
+                return feature;
+              });
+            if (feature) {
+              const userId =feature.values_.name;
+              const url = `https://github.com/${userId}`;
+              window.open(url)
+              
+            }
+          })
     </script>
   </body>
 </html>
