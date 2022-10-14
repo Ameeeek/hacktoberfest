@@ -8,5 +8,10 @@ Visit https://matteomessmer.github.io/hacktoberfest/
 # Objective
 I want to create an useful website with an OSM map to display from where the contributors come.
 
+![map](https://user-images.githubusercontent.com/41189322/195787370-06a3c423-4aa8-4c19-b109-c3bed1ae2474.png)
+
+For each contribution, a new tag over the map is displayed, where the profile pic and the name of the contributor is shown.
+On top of the page, if you wish you can access the weather details of your locations (Location permission is required).
+
 # How to contribute?
 Read [CONTRIBUTING.md](CONTRIBUTING.md)
